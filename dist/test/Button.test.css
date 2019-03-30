@@ -1,0 +1,45 @@
+.mug-button {
+  border: none;
+  cursor: pointer;
+  background-color: #6200ee;
+  color: #fff;
+  font-size: var(--font-size);
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  transition: all 0.2s;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+.mug-button .text {
+  letter-spacing: 1px;
+}
+.mug-button .loading {
+  animation: loading-ani 1.4s infinite linear;
+}
+@keyframes loading-ani {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.mug-button.icon-left > .text {
+  order: 1;
+  margin-left: 0.4em;
+}
+.mug-button.icon-right > .icon {
+  order: 2;
+}
+.mug-button.icon-right > .text {
+  order: 1;
+  margin-right: 0.4em;
+}
+.mug-button:focus {
+  outline: none;
+}
+.mug-button:hover {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+}

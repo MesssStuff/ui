@@ -1,0 +1,90 @@
+.mug-button {
+  border: none;
+  cursor: pointer;
+  background-color: #6200ee;
+  color: #fff;
+  font-size: var(--font-size);
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  transition: all 0.2s;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+.mug-button .text {
+  letter-spacing: 1px;
+}
+.mug-button .loading {
+  animation: loading-ani 1.4s infinite linear;
+}
+@keyframes loading-ani {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.mug-button.icon-left > .text {
+  order: 1;
+  margin-left: 0.4em;
+}
+.mug-button.icon-right > .icon {
+  order: 2;
+}
+.mug-button.icon-right > .text {
+  order: 1;
+  margin-right: 0.4em;
+}
+.mug-button:focus {
+  outline: none;
+}
+.mug-button:hover {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular");
+}
+.material-icons[data-v-b5fc12] {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.3em;
+  width: 1em;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+.button-group[data-v-af15bf] {
+  display: inline-flex;
+  vertical-align: middle;
+}
+.button-group > .mug-button[data-v-af15bf] {
+  border-radius: 0;
+  border-right: 1.4px solid rgba(255, 255, 255, 0.7);
+}
+.button-group > .mug-button[data-v-af15bf]:first-child {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+.button-group > .mug-button[data-v-af15bf]:last-child {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border-right: none;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --font-size: 14px;
+        --border-radius: 4px;
+      }</style>
+    <title>Document</title>
+  <link rel="stylesheet" href="/App.f684dadd.css"></head>
+  <body>
+    <div id="app">
+      <mug-button icon="face" icon-position="left">Button</mug-button>
+      <mug-button-group><mug-button :loading="loading" icon="face" icon-position="left" @click="loading = !loading">Button</mug-button><mug-button :loading="!loading" icon="face" icon-position="left">Button</mug-button><mug-button :loading="loading" icon="face" icon-position="left">Button</mug-button>
+    </mug-button-group></div>
+    <script src="/App.f684dadd.js"></script>
+  </body>
+</html>
